@@ -1,0 +1,35 @@
+.heading
+    height: 525px
+    background: url('../img/heading.png') no-repeat center top
+    overflow: hidden
+    &__inner
+        padding-top: 45px
+    &__title
+        position: relative
+        background-color: rgba(255, 191, 0, 0.25)
+        max-width: 620px
+        min-height: 115px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 10px 35px
+        color: #fff
+        transform: skew(-25deg)
+        &::before
+            content: ""
+            background-color: rgba(255, 191, 0, 0.5)
+            width: 100%
+            height: 45px
+            display: block
+            position: absolute
+            bottom: 0
+            left: 0
+    &__txt
+        transform: skew(25deg)
+        line-height: 1
+        font-weight: bold
+        &--top
+            font-size: 48px
+        &--bot
+            font-size: 30px
+            text-indent: 25px

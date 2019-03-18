@@ -381,6 +381,11 @@ input[type='radio']:checked::before {
   font-size: 14px;
 }
 
+.main {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 .label {
   padding: 0 5px;
   border-radius: 5px;
@@ -391,6 +396,57 @@ input[type='radio']:checked::before {
 
 .label--green {
   background-image: linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+}
+
+.heading {
+  height: 525px;
+  background: url("../img/heading.png") no-repeat center top;
+  overflow: hidden;
+}
+
+.heading__inner {
+  padding-top: 45px;
+}
+
+.heading__title {
+  position: relative;
+  background-color: rgba(255, 191, 0, 0.25);
+  max-width: 620px;
+  min-height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 35px;
+  color: #fff;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+}
+
+.heading__title::before {
+  content: "";
+  background-color: rgba(255, 191, 0, 0.5);
+  width: 100%;
+  height: 45px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.heading__txt {
+  -webkit-transform: skew(25deg);
+          transform: skew(25deg);
+  line-height: 1;
+  font-weight: bold;
+}
+
+.heading__txt--top {
+  font-size: 48px;
+}
+
+.heading__txt--bot {
+  font-size: 30px;
+  text-indent: 25px;
 }
 
 /*==============================================================
