@@ -1,5 +1,4 @@
 .filter
-    margin-bottom: 200px
     &__inner
     &__categories
         position: relative
@@ -40,6 +39,7 @@
 .f
     &-carclass
         display: flex
+        align-items: flex-end
         margin: 0 -10px
         li
             flex-basis: 25%
@@ -47,12 +47,16 @@
             cursor: pointer
             user-select: none
             &.active-filter
+                cursor: initial
                 .f-carclass__info p
                     background: #39b300
                     color: #fff
             &:hover
                 .f-carclass__img
                     transform: translateY(-3px)
+                .f-carclass__info p
+                    background: #39b300
+                    color: #fff
         &__box
         &__img
             position: relative
@@ -86,6 +90,7 @@
                 border-radius: 0 0 5px 5px
                 text-shadow: 1px 0px 0px rgba(57, 95, 13, 0.2)
                 overflow: hidden
+                transition: 0.3s background, 0.3s color
 /* Filter button*/
 .f
     &-button

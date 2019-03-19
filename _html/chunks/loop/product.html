@@ -1,1 +1,18 @@
-<article class="product">1</article>
+<article class="product">
+    <a href="#@@title" class="product__link">
+        <h3 class="product__name @@if (context.badge) {product__name--badge}">@@title</h3>
+        <figure class="product__img"><img src="@@image" alt="@@title"></figure>
+    </a>
+    <ul class="product__info">
+        <li><span class="product__typesize">@@diameter</span></li>
+        <li><span class="product__typesize">@@size</span></li>
+        <li><span class="product__price">@@price <i>грн</i></span></li>
+    </ul>
+    <div class="product__actions">
+        <button class="product__detail" type="button">Подробнее</button>
+        <button class="btn btn--green product__buy" type="button">Купить</button>
+    </div>
+    @@if (context.badge) {
+        <span class="product__badge product__badge--@@badge">@@badge</span>
+    }
+</article>

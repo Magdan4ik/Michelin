@@ -1,4 +1,12 @@
 <section class="products">
-    <h2 class="products__title">Мы подобрали летние шины типоразмера <b id="typesize">185/80 R14С</b> для среднего класса авто</h2>
-    @@loop("./chunks/loop/product.html", "./chunks/loop/products.json")
+    <div class="products__inner container">
+        <h2 class="products__title">Мы подобрали летние шины типоразмера <b id="typesize">185/80 R14С</b> для среднего класса авто</h2>
+        <div class="products__list">
+            @@loop("./chunks/loop/product.html", "./chunks/loop/products.json")
+        </div>
+        <div class="products__inform">
+            <p> Мы подобрали для Вашего авто только <b>самые популярные</b> среди украинских автомобилистов модели. </p>
+            <p> <a href="#all" class="products__inform-link">Посмотреть все предложения для Вашего авто</a> </p>
+        </div>
+    </div>
 </section>

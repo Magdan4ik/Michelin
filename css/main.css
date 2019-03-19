@@ -389,6 +389,26 @@ input[type='radio']:checked::before {
   margin: 0 auto;
 }
 
+.btn {
+  min-width: 105px;
+  height: 45px;
+  font-size: 18px;
+  font-family: "Arial";
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.15);
+  text-shadow: 1px 0px 0px rgba(83, 131, 18, 0.4);
+}
+
+.btn--green {
+  background-image: linear-gradient(90deg, #2a9800 0%, #42cc02 100%);
+  color: #fff;
+}
+
+.btn:active {
+  padding-top: 2px;
+}
+
 .label {
   padding: 0 5px;
   border-radius: 5px;
@@ -453,10 +473,6 @@ input[type='radio']:checked::before {
   text-indent: 25px;
 }
 
-.filter {
-  margin-bottom: 200px;
-}
-
 .filter__categories {
   position: relative;
   padding-bottom: 20px;
@@ -505,6 +521,7 @@ input[type='radio']:checked::before {
 /* Filter Car Class*/
 .f-carclass {
   display: flex;
+  align-items: flex-end;
   margin: 0 -10px;
 }
 
@@ -518,6 +535,10 @@ input[type='radio']:checked::before {
           user-select: none;
 }
 
+.f-carclass li.active-filter {
+  cursor: initial;
+}
+
 .f-carclass li.active-filter .f-carclass__info p {
   background: #39b300;
   color: #fff;
@@ -526,6 +547,11 @@ input[type='radio']:checked::before {
 .f-carclass li:hover .f-carclass__img {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+}
+
+.f-carclass li:hover .f-carclass__info p {
+  background: #39b300;
+  color: #fff;
 }
 
 .f-carclass__img {
@@ -568,6 +594,7 @@ input[type='radio']:checked::before {
   border-radius: 0 0 5px 5px;
   text-shadow: 1px 0px 0px rgba(57, 95, 13, 0.2);
   overflow: hidden;
+  transition: 0.3s background, 0.3s color;
 }
 
 /* Filter button*/
@@ -610,6 +637,216 @@ input[type='radio']:checked::before {
   display: flex;
   flex-wrap: wrap;
   max-width: 400px;
+}
+
+.products {
+  background: url("../img/products/products__bg.png") no-repeat center top;
+  padding-top: 70px;
+}
+
+.products__title {
+  font-weight: normal;
+  font-size: 18px;
+  color: #3d3d3d;
+  line-height: 1;
+}
+
+.products__title #typesize {
+  color: #39b300;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.products__inform {
+  margin: 25px 0;
+  text-align: center;
+  font-size: 15px;
+  color: #3d3d3d;
+  line-height: 1.2;
+}
+
+.products__inform-link {
+  color: #3d6be0;
+}
+
+.product {
+  position: relative;
+  background: #fff;
+  flex-basis: calc(100%/3 - 20px);
+  display: flex;
+  flex-direction: column;
+  margin: 15px 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+
+.product__link {
+  display: block;
+}
+
+.product__name {
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+  color: #000;
+}
+
+.product__name--badge {
+  padding-right: 115px;
+}
+
+.product__img {
+  height: 270px;
+  overflow: hidden;
+}
+
+.product__img img {
+  margin: 0 auto;
+}
+
+.product__info {
+  margin-top: auto;
+  display: flex;
+}
+
+.product__info li {
+  flex: 0 0 33%;
+}
+
+.product__info li:first-child {
+  border-right: 1px solid #e6e6e6;
+}
+
+.product__actions {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  padding-left: 15px;
+}
+
+.product__detail {
+  font-size: 14px;
+  color: #3d6be0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.product__detail::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: #3d6be0 transparent transparent transparent;
+  -webkit-transform: scaleX(0.7);
+          transform: scaleX(0.7);
+  margin-left: 4px;
+}
+
+.product__detail:hover::after {
+  -webkit-transform: scaleX(0.7) rotate(180deg);
+          transform: scaleX(0.7) rotate(180deg);
+}
+
+.product__typesize {
+  background: #eee;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4px 13px;
+  font-size: 14px;
+  color: #414042;
+}
+
+.product__price {
+  height: 100%;
+  display: flex;
+  align-items: baseline;
+  padding: 4px 8px;
+  font-size: 24px;
+  line-height: 1.15;
+  color: #39b300;
+  white-space: nowrap;
+}
+
+.product__price i {
+  margin-left: 5px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.product__badge {
+  position: absolute;
+  background: no-repeat 90% center;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 40px;
+  font-size: 0;
+}
+
+.product__badge--adac {
+  background-image: url("../img/products/badges/adac.jpg");
+}
+
+.product__badge--eco {
+  background-image: url("../img/products/badges/eco.jpg");
+}
+
+.better {
+  background: #eeeeee;
+}
+
+.better__inner {
+  padding: 25px 15px;
+}
+
+.better__title {
+  text-align: center;
+  font-size: 24px;
+  color: #3d3d3d;
+  line-height: 1;
+}
+
+.better__list {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.better__item {
+  margin: 10px;
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.better__item-img {
+  height: 155px;
+}
+
+.better__item-img img {
+  margin: 0 auto;
+}
+
+.better__item-name {
+  font-size: 14px;
+  color: #3d3d3d;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.better__item-desc {
+  font-size: 14px;
+  color: #909090;
+  line-height: normal;
+}
+
+.better__item-delivery {
+  margin-top: 10px;
 }
 
 /*==============================================================

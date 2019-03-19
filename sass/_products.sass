@@ -1,4 +1,109 @@
 .products
+    background: url('../img/products/products__bg.png') no-repeat center top
+    padding-top: 70px
+    &__inner
     &__title
+        font-weight: normal
+        font-size: 18px
+        color: rgb(61, 61, 61)
+        line-height: 1
+        #typesize
+            color: #39b300
+    &__list
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -10px
+    &__inform
+        margin: 25px 0
+        text-align: center
+        font-size: 15px
+        color: rgb(61, 61, 61)
+        line-height: 1.2
+        &-link
+            color: #3d6be0
 .product
-    //
+    position: relative
+    background: #fff
+    flex-basis: calc(100%/3 - 20px)
+    display: flex
+    flex-direction: column
+    margin: 15px 10px
+    border: 1px solid rgb(238, 238, 238)
+    border-radius: 5px
+    &__link
+        display: block
+    &__name
+        padding: 10px 15px
+        font-size: 18px
+        font-weight: normal
+        line-height: normal
+        color: #000
+        &--badge
+            padding-right: 115px
+    &__img
+        height: 270px
+        overflow: hidden
+        img
+            margin: 0 auto
+    &__info
+        margin-top: auto
+        display: flex
+        li
+            flex: 0 0 33%
+            &:first-child
+                border-right: 1px solid #e6e6e6
+    &__actions
+        display: flex
+        justify-content: space-between
+        height: 45px
+        padding-left: 15px
+    &__detail
+        font-size: 14px
+        color: rgb(61, 107, 224)
+        display: inline-flex
+        align-items: center
+        &::after
+            content: ""
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 6px 6px 0 6px
+            border-color: rgb(61, 107, 224) transparent transparent transparent
+            transform: scaleX(0.7)
+            margin-left: 4px
+        &:hover
+            &::after
+                transform: scaleX(0.7) rotate(180deg)
+    &__typesize
+        background: #eee
+        height: 100%
+        display: flex
+        align-items: center
+        padding: 4px 13px
+        font-size: 14px
+        color: rgb(65, 64, 66)
+    &__price
+        height: 100%
+        display: flex
+        align-items: baseline
+        padding: 4px 8px
+        font-size: 24px
+        line-height: 1.15
+        color: #39b300
+        white-space: nowrap
+        i
+            margin-left: 5px
+            font-style: normal
+            font-size: 14px
+    &__badge
+        position: absolute
+        background: no-repeat 90% center
+        top: 0
+        right: 0
+        width: 100px
+        height: 40px
+        font-size: 0
+        &--adac
+            background-image: url('../img/products/badges/adac.jpg')
+        &--eco
+            background-image: url('../img/products/badges/eco.jpg')
