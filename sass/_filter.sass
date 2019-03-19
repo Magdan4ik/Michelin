@@ -1,0 +1,124 @@
+.filter
+    margin-bottom: 200px
+    &__inner
+    &__categories
+        position: relative
+        padding-bottom: 20px
+        &::before
+            content: url("../img/filter/category__more-dots.svg")
+            position: absolute
+            bottom: 0
+            left: 25px
+    &__category
+        counter-increment: category
+        margin-bottom: 20px
+        &--inline
+            display: flex
+            align-items: baseline
+    &__title
+        font-size: 18px
+        color: rgb(61, 61, 61)
+        font-weight: bold
+        margin-right: 5px
+        &::before
+            content: counters(category,"")
+            background: url('../img/filter/category__increment--green.png') no-repeat center 10px
+            width: 55px
+            height: 65px
+            display: inline-flex
+            justify-content: center
+            align-items: center
+            color: #fff
+            font-size: 24px
+        &--yellow
+            &::before
+                background-image: url('../img/filter/category__increment--yellow.png')
+
+
+
+/* Filter Car Class*/
+.f
+    &-carclass
+        display: flex
+        margin: 0 -10px
+        li
+            flex-basis: 25%
+            margin: 0 10px
+            cursor: pointer
+            user-select: none
+            &.active-filter
+                .f-carclass__info p
+                    background: #39b300
+                    color: #fff
+            &:hover
+                .f-carclass__img
+                    transform: translateY(-3px)
+        &__box
+        &__img
+            position: relative
+            z-index: 2
+            max-height: 80px
+            overflow: hidden
+            will-change: transform
+            transition: 0.3s transform
+            img
+                margin-left: auto
+                margin-right: 10px
+        &__info
+            background: #d0d0d0
+            height: 65px
+            margin-top: -30px
+            display: flex
+            align-items: flex-end
+            font-size: 14px
+            color: #525252
+            text-align: center
+            line-height: normal
+            border-radius: 5px
+            p
+                background: #eee
+                height: 45px
+                width: 100%
+                padding: 0 15px
+                display: inline-flex
+                justify-content: center
+                align-items: center
+                border-radius: 0 0 5px 5px
+                text-shadow: 1px 0px 0px rgba(57, 95, 13, 0.2)
+                overflow: hidden
+/* Filter button*/
+.f
+    &-button
+        background: transparent
+        width: 75px
+        height: 35px
+        margin: 5px
+        color: #525252
+        font-size: 18px
+        font-weight: bold
+        border: 2px solid rgb(199, 198, 199)
+        border-radius: 2px
+        transition: 0.3s background
+        &.active-filter
+            color: #fff
+            background: #39b300
+            border-color: #39b300
+            cursor: initial
+            &:hover
+                background: #39b300
+        &:hover
+            background: #f1f0f1
+
+
+/* Filter Diametr Class*/
+.f
+    &-diameter
+        display: flex
+        flex-wrap: wrap
+
+/* Filter Size Class*/
+.f
+    &-size
+        display: flex
+        flex-wrap: wrap
+        max-width: 400px
