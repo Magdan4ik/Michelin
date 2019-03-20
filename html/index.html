@@ -1,318 +1,327 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-	    <meta charset="utf-8">
-	    <title>Главная</title>
-	    <meta name="description" content="">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	    <meta name="theme-color" content="#000">
-	    <meta name="msapplication-navbutton-color" content="#000">
-	    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
-	    <link rel="stylesheet" href="../css/main.css">
-	    <script src="../js/common.js" defer></script>
-	</head>
-	<body>
-	<header class="header">
-	    <div class="container">     
-		<div class="header__inner">
-		    <a class="header__logo" href="/"><img src="../../img/logo.png" alt="Michelin"></a>
-		    <div class="header__info">
-			<div class="header__lside">
-			    <div class="header__phones">
-				<a class="header__phone" href="tel:0674052353">(067) 405 23 53</a>, 
-				<a class="header__phone" href="tel:0504611714">(050) 461 17 14</a>
-			    </div>
-			    <a class="header__phones-more"><span>Смотреть другие номера</span></a>
-			</div>
-			<div class="header__rside">
-			    <a class="header__feedback" href="#feedback">Заказать обратный звонок</a>
-			    <a class="header__livechat" href="#livechat">
-				<span class="label label--green">Online</span>
-				<span class="header__livechat-consult"><b>Чат</b> с консультантом</span>
-			    </a>
-			</div>
-		    </div>
-		</div>
-	    </div> 
-	</header>
-		<main class="main">
-		<section class="heading">
-		    <div class="heading__inner container">
-			<div class="heading__title">
-			    <h2 class="heading__txt heading__txt--top">Купите летние шины</h2>
-			    <h3 class="heading__txt heading__txt--bot">для своего авто в 4 клика</h3>
-			</div>
-		    </div>
-		</section>
-		<section class="filter">
-		    <div class="filter__inner container">
-			<div class="filter__categories">
-			    <div class="filter__category">
-				<div class="filter__title">Выберите класс авто:</div>
-				<ul class="f-carclass">
-				    <li>
-					<div class="f-carclass__box">
-					    <figure class="f-carclass__img">
-						<img src="../../img/filter/carclass__1.png" alt="Небольшие автомобили">
-					    </figure>
-					    <div class="f-carclass__info">
-						<p>Небольшие автомобили</p>
-					    </div>
-					</div>
-					<div class="f-tooltip">
-					    <p>Автомобили с максимальной скоростью не выше 190 км/ч</p>
-					    <p><b>Автомобили данной категории:</b> Fiat Punto, Renault Clio, Peugeot 207, Citroen C1, Ford Fiesta.</p>
-					</div>
-				    </li>
-				    <li>
-					<div class="f-carclass__box">
-					    <figure class="f-carclass__img">
-						<img src="../../img/filter/carclass__2.png" alt="Средний класс">
-					    </figure>
-					    <div class="f-carclass__info">
-						<p>Средний класс</p>
-					    </div>
-					</div>
-					<div class="f-tooltip">
-					    <p>Автомобили с максимальной скоростью не выше 190 км/ч</p>
-					    <p><b>Автомобили данной категории:</b> Fiat Punto, Renault Clio, Peugeot 207, Citroen C1, Ford Fiesta.</p>
-					</div>
-				    </li>
-				    <li>
-					<div class="f-carclass__box">
-					    <figure class="f-carclass__img">
-						<img src="../../img/filter/carclass__3.png" alt="Премиум класс и спортивные автомобили">
-					    </figure>
-					    <div class="f-carclass__info">
-						<p>Премиум класс и спортивные автомобили</p>
-					    </div>
-					</div>
-					<div class="f-tooltip">
-					    <p>Автомобили с максимальной скоростью не выше 190 км/ч</p>
-					    <p><b>Автомобили данной категории:</b> Fiat Punto, Renault Clio, Peugeot 207, Citroen C1, Ford Fiesta.</p>
-					</div>
-				    </li>
-				    <li>
-					<div class="f-carclass__box">
-					    <figure class="f-carclass__img">
-						<img src="../../img/filter/carclass__4.png" alt="Легкогрузовые">
-					    </figure>
-					    <div class="f-carclass__info">
-						<p>Легкогрузовые</p>
-					    </div>
-					</div>
-					<div class="f-tooltip">
-					    <p>Автомобили с максимальной скоростью не выше 190 км/ч</p>
-					    <p><b>Автомобили данной категории:</b> Fiat Punto, Renault Clio, Peugeot 207, Citroen C1, Ford Fiesta.</p>
-					</div>
-				    </li>
-				</ul>
-			    </div>
-			    <div class="filter__category filter__category--inline">
-				<div class="filter__title">Выберите диаметр шины:</div>
-				<ul class="f-diameter">
-				    <li><button class="f-button">R 13</button></li>
-				    <li><button class="f-button">R 13 C</button></li>
-				    <li><button class="f-button">R 14</button></li>
-				    <li class="active-filter"><button class="f-button">R 14 C</button></li>
-				    <li><button class="f-button">R 15</button></li>
-				    <li><button class="f-button">R 15 C</button></li>
-				</ul>
-			    </div>
-			    <div class="filter__category filter__category--inline">
-				<div class="filter__title filter__title--yellow">Выберите ширину/высоту шины:</div>
-				<ul class="f-size">
-				    <li><button class="f-button">185/80</button></li>
-				    <li><button class="f-button">185/80</button></li>
-				    <li><button class="f-button">185/80</button></li>
-				    <li><button class="f-button">185/80</button></li>
-				    <li class="active-filter"><button class="f-button">185/80</button></li>
-				    <li><button class="f-button">185/80</button></li>
-				    <li><button class="f-button">185/80</button></li>
-				    <li><button class="f-button">185/80</button></li>
-				</ul>
-			    </div>
-			</div>
-		    </div>
-		</section>
-		<section class="products">
-		    <div class="products__inner container">
-			<h2 class="products__title">Мы подобрали летние шины типоразмера <b id="typesize">185/80 R 14 С</b> для среднего класса авто</h2>
-			<div class="products__list">
-			    <article class="product">
-		    <a href="#Michelin Agilis" class="product__link">
-			<h3 class="product__name ">Michelin Agilis</h3>
-			<figure class="product__img"><img src="/img/products/product1.jpg" alt="Michelin Agilis"></figure>
-		    </a>
-		    <ul class="product__info">
-			<li><span class="product__typesize">R14</span></li>
-			<li><span class="product__typesize">185/60</span></li>
-			<li><span class="product__price">1 196 <i>грн</i></span></li>
-		    </ul>
-		    <div class="product__actions">
-			<button class="product__detail" type="button">Подробнее</button>
-			<button class="btn btn--green product__buy" type="button">Купить</button>
-		    </div>
-		</article>
-		<article class="product">
-		    <a href="#Michelin Agilis" class="product__link">
-			<h3 class="product__name product__name--badge">Michelin Agilis</h3>
-			<figure class="product__img"><img src="/img/products/product1.jpg" alt="Michelin Agilis"></figure>
-		    </a>
-		    <ul class="product__info">
-			<li><span class="product__typesize">R14C</span></li>
-			<li><span class="product__typesize">185/60</span></li>
-			<li><span class="product__price">1 196 <i>грн</i></span></li>
-		    </ul>
-		    <div class="product__actions">
-			<button class="product__detail" type="button">Подробнее</button>
-			<button class="btn btn--green product__buy" type="button">Купить</button>
-		    </div>
-			<span class="product__badge product__badge--adac">adac</span>
-		</article>
-		<article class="product">
-		    <a href="#Michelin Agilis" class="product__link">
-			<h3 class="product__name ">Michelin Agilis</h3>
-			<figure class="product__img"><img src="/img/products/product1.jpg" alt="Michelin Agilis"></figure>
-		    </a>
-		    <ul class="product__info">
-			<li><span class="product__typesize">R14C</span></li>
-			<li><span class="product__typesize">185/60</span></li>
-			<li><span class="product__price">1 196 <i>грн</i></span></li>
-		    </ul>
-		    <div class="product__actions">
-			<button class="product__detail" type="button">Подробнее</button>
-			<button class="btn btn--green product__buy" type="button">Купить</button>
-		    </div>
-		</article>
-		<article class="product">
-		    <a href="#Michelin Agilis" class="product__link">
-			<h3 class="product__name ">Michelin Agilis</h3>
-			<figure class="product__img"><img src="/img/products/product1.jpg" alt="Michelin Agilis"></figure>
-		    </a>
-		    <ul class="product__info">
-			<li><span class="product__typesize">R14C</span></li>
-			<li><span class="product__typesize">185/60</span></li>
-			<li><span class="product__price">1 196 <i>грн</i></span></li>
-		    </ul>
-		    <div class="product__actions">
-			<button class="product__detail" type="button">Подробнее</button>
-			<button class="btn btn--green product__buy" type="button">Купить</button>
-		    </div>
-		</article>
-		<article class="product">
-		    <a href="#Michelin Agilis" class="product__link">
-			<h3 class="product__name ">Michelin Agilis</h3>
-			<figure class="product__img"><img src="/img/products/product1.jpg" alt="Michelin Agilis"></figure>
-		    </a>
-		    <ul class="product__info">
-			<li><span class="product__typesize">R14C</span></li>
-			<li><span class="product__typesize">185/60</span></li>
-			<li><span class="product__price">1 196 <i>грн</i></span></li>
-		    </ul>
-		    <div class="product__actions">
-			<button class="product__detail" type="button">Подробнее</button>
-			<button class="btn btn--green product__buy" type="button">Купить</button>
-		    </div>
-		</article>
-		<article class="product">
-		    <a href="#Michelin Agilis" class="product__link">
-			<h3 class="product__name product__name--badge">Michelin Agilis</h3>
-			<figure class="product__img"><img src="/img/products/product1.jpg" alt="Michelin Agilis"></figure>
-		    </a>
-		    <ul class="product__info">
-			<li><span class="product__typesize">R14C</span></li>
-			<li><span class="product__typesize">185/60</span></li>
-			<li><span class="product__price">1 196 <i>грн</i></span></li>
-		    </ul>
-		    <div class="product__actions">
-			<button class="product__detail" type="button">Подробнее</button>
-			<button class="btn btn--green product__buy" type="button">Купить</button>
-		    </div>
-			<span class="product__badge product__badge--eco">eco</span>
-		</article>
-			</div>
-			<div class="products__inform">
-			    <p> Мы подобрали для Вашего авто только <b>самые популярные</b> среди украинских автомобилистов модели. </p>
-			    <p> <a href="#all" class="products__inform-link">Посмотреть все предложения для Вашего авто</a> </p>
-			</div>
-		    </div>
-		</section>
-		<section class="better">
-		    <div class="better__inner container">
-			<div class="better__title">Почему летние шины покупают у нас?</div>
-			<ul class="better__list">
-			    <li class="better__item">
-				<figure class="better__item-img"><img src="../../img/better/better-1.png" alt="Нам доверяют"></figure>
-				<p class="better__item-name">Нам доверяют</p>
-				<div class="better__item-desc">интернет-магазин автомобильного сайта №1 в Украине AUTO.RIA.com</div>
-			    </li>
-			    <li class="better__item">
-				<figure class="better__item-img"><img src="../../img/better/better-2.png" alt="Выгодно"></figure>
-				<p class="better__item-name">Выгодно</p>
-				<div class="better__item-desc">Бесплатная доставка по Украине курьерскими службами</div>
-				<div class="better__item-delivery"><img src="../../img/better/better-delivery.png" alt="Доставка"></div>
-			    </li>
-			    <li class="better__item">
-				<figure class="better__item-img"><img src="../../img/better/better-3.png" alt="Без предоплат"></figure>
-				<p class="better__item-name">Без предоплат</p>
-				<div class="better__item-desc">Оплата только после получения товара</div>
-			    </li>
-			    <li class="better__item">
-				<figure class="better__item-img"><img src="../../img/better/better-4.png" alt="Работаем"></figure>
-				<p class="better__item-name">Работаем</p>
-				<div class="better__item-desc">Прием заказов по телефону и на сайте круглосуточно</div>
-			    </li>
-			</ul>
-		    </div>
-		</section>
-	</main>
-	<footer class="footer">
-	    <section class="contacts">
-		<div class="contacts__inner container">
-		    <div class="contacts__title">Остались вопросы? </div>
-		    <ul class="contacts__items">
-			<li class="contacts__item">
-			    <p><b>Телефон менеджера </b></p>
-			    <p>для вопросов и консультации</p>
-			    <div class="contacts__manager">
-				<figure class="contacts__manager-img"><img src="../../img/command/manager.jpg" alt=""></figure>
-				<div class="contacts__manager-info">
-				    <p class="contacts__manager-name">Константин Озаренский </p>
-				    <p class="contacts__manager-pos">Менеджер по продажам</p>
-				    <p class="contacts__manager-tel"><a href="tel:0000000000">(000) 000-00-00</a></p>
-				</div>
-			    </div>
-			</li>
-			<li class="contacts__item">
-			    <p><b>Чат оn-line</b></p>
-			    <p>с консультантом</p>
-			    <button class="btn btn--green contacts__item-btn contacts__item-btn--livechat" type="button">Начать чат</button>
-			</li>
-			<li class="contacts__item">
-			    <p><b>Перезвоните мне</b></p>
-			    <p>обратный звонок</p>
-			    <button class="btn btn--green contacts__item-btn contacts__item-btn--feedback" type="button">Заказать</button>
-			</li>
-		    </ul>
-		</div>
-	    </section>
-	    <section class="subscribe">
-		<div class="subscribe__inner container">
-		    <div class="subscribe__head">
-			<p><b>Хотите первым знать об акциях, скидках и распродажах</b></p>
-			<p>Подпишитесь на электронную рассылку</p>
-		    </div>
-		    <div class="subscribe__formbox">
-			<form action="#" class="subscribe__form">
-			    <input class="subscribe__form-inp" type="email" placeholder="Введите адрес">
-			    <button class="subscribe__form-btn" type="submit">Подписаться</button>
-			</form>
-		    </div>
-		</div>
-	    </section>
-	</footer>
-    </body>
-</html>
 
+<head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/common.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="/"><img src="../img/logo.png" alt="Michelin"></a>
+                <div class="header__info">
+                    <div class="header__lside">
+                        <div class="header__phones">
+                            <a class="header__phone" href="tel:0674052353">(067) 405 23 53</a>,
+                            <a class="header__phone" href="tel:0504611714">(050) 461 17 14</a>
+                        </div>
+                        <a class="header__phones-more"><span>Смотреть другие номера</span></a>
+                    </div>
+                    <div class="header__rside">
+                        <a class="header__feedback" href="#feedback">Заказать обратный звонок</a>
+                        <a class="header__livechat" href="#livechat">
+                            <span class="label label--green">Online</span>
+                            <span class="header__livechat-consult"><b>Чат</b> с консультантом</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="heading">
+            <div class="heading__inner container">
+                <div class="heading__title">
+                    <h2 class="heading__txt heading__txt--top">Купите летние шины</h2>
+                    <h3 class="heading__txt heading__txt--bot">для своего авто в 4 клика</h3>
+                </div>
+            </div>
+        </section>
+        <section class="filter">
+            <div class="filter__inner container">
+                <div class="filter__categories">
+                    <div class="filter__category">
+                        <div class="filter__title">Выберите класс авто:</div>
+                        <ul class="f-carclass">
+                            <li>
+                                <div class="f-carclass__box">
+                                    <figure class="f-carclass__img">
+                                        <img src="../img/filter/carclass__1.png" alt="Небольшие автомобили">
+                                    </figure>
+                                    <div class="f-carclass__info">
+                                        <p>Небольшие автомобили</p>
+                                    </div>
+                                </div>
+                                <div class="f-tooltip">
+                                    <p>Автомобили с максимальной скоростью не выше 190 км/ч</p>
+                                    <p><b>Автомобили данной категории:</b> Fiat Punto, Renault Clio, Peugeot 207,
+                                        Citroen C1, Ford Fiesta.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="f-carclass__box">
+                                    <figure class="f-carclass__img">
+                                        <img src="../img/filter/carclass__2.png" alt="Средний класс">
+                                    </figure>
+                                    <div class="f-carclass__info">
+                                        <p>Средний класс</p>
+                                    </div>
+                                </div>
+                                <div class="f-tooltip">
+                                    <p>Автомобили с максимальной скоростью не выше 190 км/ч</p>
+                                    <p><b>Автомобили данной категории:</b> Fiat Punto, Renault Clio, Peugeot 207,
+                                        Citroen C1, Ford Fiesta.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="f-carclass__box">
+                                    <figure class="f-carclass__img">
+                                        <img src="../img/filter/carclass__3.png" alt="Премиум класс и спортивные автомобили">
+                                    </figure>
+                                    <div class="f-carclass__info">
+                                        <p>Премиум класс и спортивные автомобили</p>
+                                    </div>
+                                </div>
+                                <div class="f-tooltip">
+                                    <p>Автомобили с максимальной скоростью не выше 190 км/ч</p>
+                                    <p><b>Автомобили данной категории:</b> Fiat Punto, Renault Clio, Peugeot 207,
+                                        Citroen C1, Ford Fiesta.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="f-carclass__box">
+                                    <figure class="f-carclass__img">
+                                        <img src="../img/filter/carclass__4.png" alt="Легкогрузовые">
+                                    </figure>
+                                    <div class="f-carclass__info">
+                                        <p>Легкогрузовые</p>
+                                    </div>
+                                </div>
+                                <div class="f-tooltip">
+                                    <p>Автомобили с максимальной скоростью не выше 190 км/ч</p>
+                                    <p><b>Автомобили данной категории:</b> Fiat Punto, Renault Clio, Peugeot 207,
+                                        Citroen C1, Ford Fiesta.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter__category filter__category--inline">
+                        <div class="filter__title">Выберите диаметр шины:</div>
+                        <ul class="f-diameter">
+                            <li><button class="f-button">R 13</button></li>
+                            <li><button class="f-button">R 13 C</button></li>
+                            <li><button class="f-button">R 14</button></li>
+                            <li class="active-filter"><button class="f-button">R 14 C</button></li>
+                            <li><button class="f-button">R 15</button></li>
+                            <li><button class="f-button">R 15 C</button></li>
+                        </ul>
+                    </div>
+                    <div class="filter__category filter__category--inline">
+                        <div class="filter__title filter__title--yellow">Выберите ширину/высоту шины:</div>
+                        <ul class="f-size">
+                            <li><button class="f-button">185/80</button></li>
+                            <li><button class="f-button">185/80</button></li>
+                            <li><button class="f-button">185/80</button></li>
+                            <li><button class="f-button">185/80</button></li>
+                            <li class="active-filter"><button class="f-button">185/80</button></li>
+                            <li><button class="f-button">185/80</button></li>
+                            <li><button class="f-button">185/80</button></li>
+                            <li><button class="f-button">185/80</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="products__inner container">
+                <h2 class="products__title">Мы подобрали летние шины типоразмера <b id="typesize">185/80 R 14 С</b> для
+                    среднего класса авто</h2>
+                <div class="products__list">
+                    <article class="product">
+                        <a href="#Michelin Agilis" class="product__link">
+                            <h3 class="product__name ">Michelin Agilis</h3>
+                            <figure class="product__img"><img src="../img/products/product1.jpg" alt="Michelin Agilis"></figure>
+                        </a>
+                        <ul class="product__info">
+                            <li><span class="product__typesize">R14</span></li>
+                            <li><span class="product__typesize">185/60</span></li>
+                            <li><span class="product__price">1 196 <i>грн</i></span></li>
+                        </ul>
+                        <div class="product__actions">
+                            <button class="product__detail" type="button">Подробнее</button>
+                            <button class="btn btn--green product__buy" type="button">Купить</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <a href="#Michelin Agilis" class="product__link">
+                            <h3 class="product__name product__name--badge">Michelin Agilis</h3>
+                            <figure class="product__img"><img src="../img/products/product1.jpg" alt="Michelin Agilis"></figure>
+                        </a>
+                        <ul class="product__info">
+                            <li><span class="product__typesize">R14C</span></li>
+                            <li><span class="product__typesize">185/60</span></li>
+                            <li><span class="product__price">1 196 <i>грн</i></span></li>
+                        </ul>
+                        <div class="product__actions">
+                            <button class="product__detail" type="button">Подробнее</button>
+                            <button class="btn btn--green product__buy" type="button">Купить</button>
+                        </div>
+                        <span class="product__badge product__badge--adac">adac</span>
+                    </article>
+                    <article class="product">
+                        <a href="#Michelin Agilis" class="product__link">
+                            <h3 class="product__name ">Michelin Agilis</h3>
+                            <figure class="product__img"><img src="../img/products/product1.jpg" alt="Michelin Agilis"></figure>
+                        </a>
+                        <ul class="product__info">
+                            <li><span class="product__typesize">R14C</span></li>
+                            <li><span class="product__typesize">185/60</span></li>
+                            <li><span class="product__price">1 196 <i>грн</i></span></li>
+                        </ul>
+                        <div class="product__actions">
+                            <button class="product__detail" type="button">Подробнее</button>
+                            <button class="btn btn--green product__buy" type="button">Купить</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <a href="#Michelin Agilis" class="product__link">
+                            <h3 class="product__name ">Michelin Agilis</h3>
+                            <figure class="product__img"><img src="../img/products/product1.jpg" alt="Michelin Agilis"></figure>
+                        </a>
+                        <ul class="product__info">
+                            <li><span class="product__typesize">R14C</span></li>
+                            <li><span class="product__typesize">185/60</span></li>
+                            <li><span class="product__price">1 196 <i>грн</i></span></li>
+                        </ul>
+                        <div class="product__actions">
+                            <button class="product__detail" type="button">Подробнее</button>
+                            <button class="btn btn--green product__buy" type="button">Купить</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <a href="#Michelin Agilis" class="product__link">
+                            <h3 class="product__name ">Michelin Agilis</h3>
+                            <figure class="product__img"><img src="../img/products/product1.jpg" alt="Michelin Agilis"></figure>
+                        </a>
+                        <ul class="product__info">
+                            <li><span class="product__typesize">R14C</span></li>
+                            <li><span class="product__typesize">185/60</span></li>
+                            <li><span class="product__price">1 196 <i>грн</i></span></li>
+                        </ul>
+                        <div class="product__actions">
+                            <button class="product__detail" type="button">Подробнее</button>
+                            <button class="btn btn--green product__buy" type="button">Купить</button>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <a href="#Michelin Agilis" class="product__link">
+                            <h3 class="product__name product__name--badge">Michelin Agilis</h3>
+                            <figure class="product__img"><img src="../img/products/product1.jpg" alt="Michelin Agilis"></figure>
+                        </a>
+                        <ul class="product__info">
+                            <li><span class="product__typesize">R14C</span></li>
+                            <li><span class="product__typesize">185/60</span></li>
+                            <li><span class="product__price">1 196 <i>грн</i></span></li>
+                        </ul>
+                        <div class="product__actions">
+                            <button class="product__detail" type="button">Подробнее</button>
+                            <button class="btn btn--green product__buy" type="button">Купить</button>
+                        </div>
+                        <span class="product__badge product__badge--eco">eco</span>
+                    </article>
+                </div>
+                <div class="products__inform">
+                    <p> Мы подобрали для Вашего авто только <b>самые популярные</b> среди украинских автомобилистов
+                        модели. </p>
+                    <p> <a href="#all" class="products__inform-link">Посмотреть все предложения для Вашего авто</a> </p>
+                </div>
+            </div>
+        </section>
+        <section class="better">
+            <div class="better__inner container">
+                <div class="better__title">Почему летние шины покупают у нас?</div>
+                <ul class="better__list">
+                    <li class="better__item">
+                        <figure class="better__item-img"><img src="../img/better/better-1.png" alt="Нам доверяют"></figure>
+                        <p class="better__item-name">Нам доверяют</p>
+                        <div class="better__item-desc">интернет-магазин автомобильного сайта №1 в Украине AUTO.RIA.com</div>
+                    </li>
+                    <li class="better__item">
+                        <figure class="better__item-img"><img src="../img/better/better-2.png" alt="Выгодно"></figure>
+                        <p class="better__item-name">Выгодно</p>
+                        <div class="better__item-desc">Бесплатная доставка по Украине курьерскими службами</div>
+                        <div class="better__item-delivery"><img src="../img/better/better-delivery.png" alt="Доставка"></div>
+                    </li>
+                    <li class="better__item">
+                        <figure class="better__item-img"><img src="../img/better/better-3.png" alt="Без предоплат"></figure>
+                        <p class="better__item-name">Без предоплат</p>
+                        <div class="better__item-desc">Оплата только после получения товара</div>
+                    </li>
+                    <li class="better__item">
+                        <figure class="better__item-img"><img src="../img/better/better-4.png" alt="Работаем"></figure>
+                        <p class="better__item-name">Работаем</p>
+                        <div class="better__item-desc">Прием заказов по телефону и на сайте круглосуточно</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="contacts">
+            <div class="contacts__inner container">
+                <div class="contacts__title">Остались вопросы? </div>
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <p><b>Телефон менеджера </b></p>
+                        <p>для вопросов и консультации</p>
+                        <div class="contacts__manager">
+                            <figure class="contacts__manager-img"><img src="../img/command/manager.jpg" alt=""></figure>
+                            <div class="contacts__manager-info">
+                                <p class="contacts__manager-name">Константин Озаренский </p>
+                                <p class="contacts__manager-pos">Менеджер по продажам</p>
+                                <p class="contacts__manager-tel"><a href="tel:0000000000">(000) 000-00-00</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts__item">
+                        <p><b>Чат оn-line</b></p>
+                        <p>с консультантом</p>
+                        <button class="btn btn--green contacts__item-btn contacts__item-btn--livechat" type="button">Начать
+                            чат</button>
+                    </li>
+                    <li class="contacts__item">
+                        <p><b>Перезвоните мне</b></p>
+                        <p>обратный звонок</p>
+                        <button class="btn btn--green contacts__item-btn contacts__item-btn--feedback" type="button">Заказать</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="subscribe__inner container">
+                <div class="subscribe__head">
+                    <p><b>Хотите первым знать об акциях, скидках и распродажах</b></p>
+                    <p>Подпишитесь на электронную рассылку</p>
+                </div>
+                <div class="subscribe__formbox">
+                    <form action="#" class="subscribe__form">
+                        <input class="subscribe__form-inp" type="email" placeholder="Введите адрес">
+                        <button class="subscribe__form-btn" type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
