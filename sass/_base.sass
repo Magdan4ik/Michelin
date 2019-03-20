@@ -21,14 +21,6 @@ $_xs: 480px
 	color: #000
 	transition: 0.4s transform, 0.4s opacity
 
-\::-moz-selection
-	background: var(--main-color)
-	color: #fff
-
-\::selection
-	background: var(--main-color)
-	color: #fff
-
 \::-webkit-scrollbar
 	width: 6px
 	height: 6px
@@ -52,14 +44,6 @@ body
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif
 	font-weight: 400
 	overflow-x: hidden
-	&::before
-		content: ""
-		position: fixed
-		z-index: 222
-		left: 50%
-		height: 100%
-		width: 1px
-		background: red
 
 a, button
 	background: transparent
@@ -86,15 +70,16 @@ select
 	width: 100%
 	display: block
 	padding: 5px 0
-	font-size: 16px
+	font-size: 14px
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif
 	font-weight: 300
+	font-style: italic
 	line-height: normal
 	border: none
 	outline: none
 	color: #525252
 	&::placeholder
-		color: #CFDDE2
+		color: #909090
 		opacity: 1
 textarea
 	resize: vertical
@@ -187,5 +172,3 @@ input
 	padding-left: 15px
 	margin-right: auto
 	margin-left: auto
-	border-left: 1px solid red
-	border-right: 1px solid red

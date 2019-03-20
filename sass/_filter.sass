@@ -38,10 +38,12 @@
 /* Filter Car Class*/
 .f
     &-carclass
+        position: relative
         display: flex
         align-items: flex-end
         margin: 0 -10px
         li
+            position: relative 
             flex-basis: 25%
             margin: 0 10px
             cursor: pointer
@@ -103,17 +105,15 @@
         font-weight: bold
         border: 2px solid rgb(199, 198, 199)
         border-radius: 2px
-        transition: 0.3s background
-        &.active-filter
-            color: #fff
-            background: #39b300
-            border-color: #39b300
-            cursor: initial
-            &:hover
-                background: #39b300
+        transition: 0.3s background, 0.3s border
         &:hover
             background: #f1f0f1
-
+.active-filter
+    .f-button
+        color: #fff
+        background: #39b300
+        border-color: #39b300
+        cursor: initial
 
 /* Filter Diametr Class*/
 .f
@@ -127,3 +127,42 @@
         display: flex
         flex-wrap: wrap
         max-width: 400px
+        .f-button
+            width: 90px
+
+/* Filter tooltip*/
+.f
+    &-tooltip
+        visibility: hidden
+        opacity: 0
+        position: absolute
+        left: 0
+        right: 0
+        top: 100%
+        background-color: #f7f7f7
+        width: 100vw
+        min-width: 250px
+        max-width: 400px
+        font-size: 14px
+        color: #414042
+        padding: 8px
+        margin-top: 15px
+        border: 1px solid #eee
+        border-radius: 0 5px 5px 5px
+        z-index: 999
+        line-height: 1
+        transition: 0.3s opacity
+        &--visible
+            visibility: visible
+            opacity: 1
+        p:not(:last-of-type)
+            margin-bottom: 10px 
+        &::before
+            content: ''
+            position: absolute
+            top: -7px
+            left: 20px
+            border-right: 7px solid transparent
+            border-bottom: 7px solid transparent
+            border-left: 7px solid transparent
+            border-bottom-color: #eee
