@@ -45,6 +45,7 @@
         li
             position: relative 
             flex-basis: 25%
+            min-width: 200px
             margin: 0 10px
             cursor: pointer
             user-select: none
@@ -133,8 +134,7 @@
 /* Filter tooltip*/
 .f
     &-tooltip
-        visibility: hidden
-        opacity: 0
+        display: none
         position: absolute
         left: 0
         right: 0
@@ -153,8 +153,7 @@
         line-height: 1
         transition: 0.3s opacity
         &--visible
-            visibility: visible
-            opacity: 1
+            display: block
         p:not(:last-of-type)
             margin-bottom: 10px 
         &::before
